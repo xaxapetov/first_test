@@ -21,13 +21,13 @@ def divide(num1, num2):
 def multiply(num1, num2):
     """"Умножение двух переменных"""
     result = num1 * num2
-    return result("operation_history")
+    return result
 
 
 def create_history(num1, operation, num2, res):
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.datetime.now().strftime("[%Y-%m-%d][%H:%M:%S]")
     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    history_entry = f"{timestamp} {num1} {operation} {num2} = {res}"
+    history_entry = f"{timestamp} -> {num1} {operation} {num2} = {res}"
     return history_entry
 
 

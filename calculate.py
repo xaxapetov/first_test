@@ -1,6 +1,5 @@
 import datetime
 import functions
-
 addition = '1. Сложение'
 subtraction = '2. Вычитание'
 division = '3. Деление'
