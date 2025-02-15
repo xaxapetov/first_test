@@ -39,7 +39,6 @@ while True:
     else:
         print("Неверный выбор операции!")
         continue
-
     operation_history.append(functions.create_history(first_number, operation, second_number, result))
     print(f"Ответ: {result}")
 print('Завершение программы! Будем рады видеть Вас снова!')
