@@ -22,19 +22,19 @@ while True:
         second_number = float(input())
     if selected_operation == 1:
         operation = "+"
-        result = functions.fold(first_number, second_number)
+        result = functions.calculations(first_number,second_number,operation)
     elif selected_operation == 2:
         operation = "-"
-        result = functions.subtract(first_number, second_number)
+        result = functions.calculations(first_number, second_number,operation)
     elif selected_operation == 3:
         operation = "/"
         while second_number == 0:
             print("Ошибка! Введите верное число!")
             second_number = float(input())
-        result = functions.divide(first_number,second_number)
+        result = functions.calculations(first_number,second_number,operation)
     elif selected_operation == 4:
         operation = "*"
-        result = functions.multiply(first_number, second_number)
+        result = functions.calculations(first_number, second_number, operation)
     else:
         print("Неверный выбор операции!")
         continue
